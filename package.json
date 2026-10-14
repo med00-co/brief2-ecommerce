@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "npx @tailwindcss/cli -i ./input.css -o ./output.css"
+ "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css --minify"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3"
   }
 }
