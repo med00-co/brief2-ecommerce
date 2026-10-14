@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
+  "scripts": {
     "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
     "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css --minify"
   },
