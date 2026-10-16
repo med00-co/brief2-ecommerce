@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <br />
+    <!-- title panier  -->
+    <div class="flex w-full justify-between px-7">
+      <b>Mon panier</b>
+      <i>(3 articles)</i>
+    </div>
+    <br />
+    <!--      les produite        -->
+    <div
+      class="relative flex items-center gap-3 bg-[#FAF7F2] p-4 rounded-lg mx-5"
+    >
+      <img
+        src="image-panier/tajine.png"
+        alt="tajine en panier "
+        class="w-20 rounded-xl"
+      />
+      <img
+        src="image-panier/Frame.png"
+        alt="trach"
+        class="w-4 absolute top-3 right-3 cursor-pointer"
+      />
+      <div>
+        <pre><b>  Tagine traditionnel </b>
+ <b class="text-red-900">349 DH</b>
+</pre>
+
+        <div class="flex space-x-1">
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b class="leading-4">-</b>
+          </button>
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b>1</b>
+          </button>
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b>+</b>
+          </button>
+        </div>
+        <b class="text-red-900 absolute top-8/12 right-3">349 DH</b>
+      </div>
+    </div>
+    <br />
+    <div
+      class="relative flex items-center gap-3 bg-[#FAF7F2] p-4 rounded-lg mx-5"
+    >
+      <img
+        src="image-panier/mizharia.png"
+        alt="tajine en panier "
+        class="w-20 rounded-xl"
+      />
+      <img
+        src="image-panier/Frame.png"
+        alt="trach"
+        class="w-4 absolute top-3 right-3 cursor-pointer"
+      />
+      <div>
+        <pre><b> Vase artisanal </b>
+ <b class="text-red-900">199 DH</b>
+</pre>
+
+        <div class="flex space-x-1">
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b class="leading-4">-</b>
+          </button>
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b>1</b>
+          </button>
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b>+</b>
+          </button>
+        </div>
+        <b class="text-red-900 absolute top-8/12 right-3">199 DH</b>
+      </div>
+    </div>
+    <br />
+    <div
+      class="relative flex items-center gap-3 bg-[#FAF7F2] p-4 rounded-lg mx-5"
+    >
+      <img
+        src="image-panier/tabsile.png"
+        alt="tajine en panier "
+        class="w-20 rounded-xl"
+      />
+      <img
+        src="image-panier/Frame.png"
+        alt="trach"
+        class="w-4 absolute top-3 right-3 cursor-pointer"
+      />
+      <div>
+        <pre><b>  Bol céramique </b>
+ <b class="text-red-900">129 DH</b>
+</pre>
+
+        <div class="flex space-x-1">
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b class="leading-4">-</b>
+          </button>
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b>1</b>
+          </button>
+          <button
+            class="flex h-5 w-5 items-center justify-center border border-[#EDE0D4] bg-[#EDE0D4] rounded"
+          >
+            <b>+</b>
+          </button>
+        </div>
+        <b class="text-red-900 absolute top-8/12 right-3">129 DH</b>
+      </div>
+    </div>
+    <div class="bg-[#FAF7F2]">
+      <b>Récapitulatif de commande</b>
+      <hr />
+      <div class="flex">
+      <p>
+        Sous-total<br />
+        Frais de livraison
+      </p>
+      <p >
+        876 DH
+        <br />
+        30 DH
+      </p>
+      </div>
+      <div class="flex items-center gap-2">
+        <div
+          class="flex items-center gap-2 rounded-lg bg-[#ffffff] px-3 py-2"
+        >
+          <img
+            src="/image-panier/tag-cobon.png"
+            alt="tag-cobon"
+            class="size-5 shrink-0"
+          />
+          <input
+            type="text"
+            placeholder="Code promo"
+            class="min-w-0 flex-1 bg-transparent outline-none"
+          />
+        </div>
+        <button type="button" class="w-20 h-10 bg-[#E4D4C8] rounded-lg">Appliquer</button>
+       
+      </div>
+       <b>Total</b>
+       <b>906 DH</b>
+
+    </div>
+    <button type="button" class="w-64 h-11 bg-[#983E1E] rounded-3xl ">Appliquer</button>
+  </body>
+</html>
