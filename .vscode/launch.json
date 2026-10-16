@@ -7,8 +7,13 @@
         {
             "type": "editor-browser",
             "request": "launch",
+<<<<<<< HEAD
             "name": "Open fiche-produit.html",
             "url": "file:///c%3A/Users/ycode/Documents/A1%20Youcode%202026-2027/brief2-ecommerce/fiche-produit.html"
+=======
+            "name": "Open composantes.html",
+            "url": "file:///c%3A/Users/ycode/Documents/A1%20Youcode%202026-2027/brief2-ecommerce/composantes.html"
+>>>>>>> develop
         }
     ]
 }
