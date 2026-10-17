@@ -222,17 +222,11 @@
   .top-0 {
     top: 0px;
   }
-  .top-1 {
-    top: var(--spacing);
-  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
   .top-3 {
     top: calc(var(--spacing) * 3);
-  }
-  .top-8 {
-    top: calc(var(--spacing) * 8);
   }
   .top-8\/12 {
     top: calc(8 / 12 * 100%);
@@ -245,9 +239,6 @@
   }
   .bottom-4 {
     bottom: calc(var(--spacing) * 4);
-  }
-  .left-1 {
-    left: var(--spacing);
   }
   .left-1\/2 {
     left: calc(1 / 2 * 100%);
@@ -312,9 +303,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .size-5 {
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
@@ -335,9 +323,6 @@
   .h-36 {
     height: calc(var(--spacing) * 36);
   }
-  .h-152 {
-    height: calc(var(--spacing) * 152);
-  }
   .h-\[111px\] {
     height: 111px;
   }
@@ -352,9 +337,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: var(--spacing);
   }
   .w-1\/3 {
     width: calc(1 / 3 * 100%);
@@ -374,47 +356,11 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
-  .w-80 {
-    width: calc(var(--spacing) * 80);
-  }
-  .w-90 {
-    width: calc(var(--spacing) * 90);
-  }
-  .w-1150 {
-    width: calc(var(--spacing) * 1150);
-  }
-  .w-\[\%\] {
-    width: %;
-  }
-  .w-\[9\] {
-    width: 9;
-  }
-  .w-\[90\%\] {
-    width: 90%;
-  }
-  .w-\[90\] {
-    width: 90;
-  }
   .w-\[97\%\] {
     width: 97%;
   }
-  .w-\[98\%\] {
-    width: 98%;
-  }
-  .w-\[98\] {
-    width: 98;
-  }
-  .w-\[100\%\] {
-    width: 100%;
-  }
   .w-\[148px\] {
     width: 148px;
-  }
-  .w-\[1150\] {
-    width: 1150;
-  }
-  .w-\[1150px\] {
-    width: 1150px;
   }
   .w-full {
     width: 100%;
@@ -434,18 +380,8 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
@@ -465,9 +401,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -527,9 +460,6 @@
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
-  }
-  .rounded-\[14\] {
-    border-radius: 14;
   }
   .rounded-\[14px\] {
     border-radius: 14px;
@@ -637,12 +567,6 @@
   .px-\[8px\] {
     padding-inline: 8px;
   }
-  .px-\[40\] {
-    padding-inline: 40;
-  }
-  .px-\[40px\] {
-    padding-inline: 40px;
-  }
   .px-\[72px\] {
     padding-inline: 72px;
   }
@@ -651,9 +575,6 @@
   }
   .px-\[120px\] {
     padding-inline: 120px;
-  }
-  .px-\[400px\] {
-    padding-inline: 400px;
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -673,23 +594,11 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-71 {
-    padding-block: calc(var(--spacing) * 71);
-  }
   .py-\[31px\] {
     padding-block: 31px;
   }
-  .py-\[71\] {
-    padding-block: 71;
-  }
   .py-\[71px\] {
     padding-block: 71px;
-  }
-  .py-\[100\[\]\] {
-    padding-block: 100[];
-  }
-  .py-\[100px\] {
-    padding-block: 100px;
   }
   .py-\[110px\] {
     padding-block: 110px;
@@ -699,18 +608,6 @@
   }
   .py-\[125px\] {
     padding-block: 125px;
-  }
-  .py-\[200\] {
-    padding-block: 200;
-  }
-  .py-\[px\] {
-    padding-block: px;
-  }
-  .py-\[٣١px\] {
-    padding-block: ٣١px;
-  }
-  .py-px {
-    padding-block: 1px;
   }
   .text-center {
     text-align: center;
@@ -740,9 +637,6 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .text-\[1px\] {
-    font-size: 1px;
   }
   .text-\[10px\] {
     font-size: 10px;
@@ -802,8 +696,8 @@
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
   }
-  .text-\[px\] {
-    color: px;
+  .text-\[A44827\] {
+    color: A44827;
   }
   .text-black {
     color: var(--color-black);
@@ -836,10 +730,6 @@
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-none {
     --tw-outline-style: none;
