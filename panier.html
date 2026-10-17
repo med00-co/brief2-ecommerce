@@ -1,23 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
+  
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <header class="hidden lg:block">
+  <body >
+    <header class="hidden lg:block ">
         <!-- header desktop -->
         <header class="sticky top-0 z-40 w-full px-8 hidden lg:block   " >
          <div class=" max-w-7xl mx-auto flex items-center justify-between py-6 " >
-            <img src="image/LOGO.png" width="140" height="51" class="-translate-y-1">
+            <img src="image/LOGO.png" width="240"  class="-translate-y-1">
             <div class="  flex items-center gap-18 text-[#000000] ">
             <a href="index.html"  >Accueil</a>
             <!-- had lclass hwa li kaydir select 3la lpage 7ydoh wdiroh 3la lpage ta3kom -->
             <a href="catalogue.html"  >Catalogue</a>
-            <a href="contact.html" > Contact</a>
             <a href="panier.html" class="text-[#A45B3D] inline-block -translate-y-2 underline underline-offset-9 font-bold "> Panier</a>
+            <a href="contact.html" > Contact</a>
+            
             </div>
             <div class="relative" w72 >
             <input type="search"  placeholder=" Rechercher un produit" class="  bg-[#EDE0D4] px-8 py-2 rounded-full focus:outline-none ">
@@ -39,8 +44,9 @@
         </header>
     <br />
     <!-- title panier  -->
+<div class="lg:px-20">
     <div class="flex w-full justify-between px-7 md:text-3xl">
-      <b>Mon panier</b>
+      <h1><b class="font-playfair">Mon panier</b></h1>
       <i>(3 articles)</i>
     </div>
     <br />
@@ -196,11 +202,11 @@
        <b>906 DH </b></div>
      <div class="flex justify-center">
 <button type="button" class="w-64 h-11 bg-[#983E1E] rounded-3xl mt-4 "><p class="text-[#ffffff]">Appliquer</p></button>
-    </div></div> <br><br><br
-    
-    <--  switch page mobeil  -->
+   </div> </div></div> <br><br><br
+
+   <!-- switch page mobeil  -->
   <nav class=" fixed bottom-4 left-1/2 -translate-x-1/2 z-50 lg:hidden">
-    <div class="flex items-center gap-11 bg-[#eedecf] px-12 py-2.5 rounded-full shadow-md">
+    <div class="flex items-center gap-16 bg-[#eedecf] px-12 py-2.5 rounded-full shadow-md">
      <!-- index  -->
                             
         <a href="index.html" class="text-[#2b3a32]">
