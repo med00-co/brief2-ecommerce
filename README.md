@@ -45,7 +45,7 @@ Le projet couvre uniquement la partie visible du site : **aucun paiement, aucune
 
 - **Fichier Figma :** https://www.figma.com/design/3bkfoUuKWqO1PSfZeFmd9v/brief-2?node-id=0-1&p=f&t=hOUpaiTzWXoKOzHk-0
 - **Dépôt GitHub :** https://github.com/med00-co/brief2-ecommerce
-- **Bibliothèque de composants :** `composants.html`
+- **Bibliothèque de composants :** `composantes.html`
 
 ## 6. Technologies utilisées
 
