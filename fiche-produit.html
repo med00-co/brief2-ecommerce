@@ -1,55 +1,245 @@
 <!DOCTYPE html>
-<html lang ="fr">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FakhArt | fiche de produit</title>
+        <link rel="stylesheet" href="./output.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
         
     </head>
-    <body>
-        <header></header>
-        <main>
-            <section>
-                <div>
-                    <img src="assets/images/produits/tagine1.png" alt="Tagine traditionnel en terre" width="280" height="280">
-                    <img src="assets/images/produits/tagine1.png" alt="angle actuel" width="79" height="79">
-                    <img src="assets/images/produits/tagine1-under/tagine1-under-1.jpeg" alt="other angle to view 2" width="79" height="79">
-                    <img src="assets/images/produits/tagine1-under/tagine1-under-2.jpeg" alt="other angle to view 3" width="79" height="79">
-                </div>
-                <div>
-                    <h2>Tagine Traditionel</h2>
-                    <span>249 MAD</span>
-                    <p>Façonné à la main par des artisans marocains,
-                         ce tajine en terre cuite allie savoir-faire traditionnel et charme authentique.
-                          Chaque pièce présente de légères variations qui le rendent unique.</p>
-                    <button>-  1  +</button>
-                    <button>
-                        <img src="./assets/images/icons/add-cart.png" alt="ajouter au panier" width="24.88" height="24.88">
-                        Ajouter au panier</button>
+    <body class="flex flex-col bg-[#FAF7F2] text-stone-800 antialiased min-h-screen">
 
-                </div>
-                
-            </section>
-            <section>
-                <span>Vous aimerez aussi</span>
-                <div class="size-48 shadow-xl rounded-md">
-                    <img src="./assets/images/produits/vase1.png" alt="produits proposé" width="79" height="79">
-                    <span>Vase Artisanal</span>
-                    <p>80 DH</p>
-                </div>
-                <div>
-                    <img src="./assets/images/produits/assiete1.png" alt="produits proposé" width="79" height="79">
-                    <span>Assiete décorative</span>
-                    <p>149 DH</p>
-                </div>
-                <div>
-                    <img src="./assets/images/produits/vase1.png" alt="produits proposé" width="79" height="79">
-                    <span>Petit Tagine</span>
-                    <p>199 DH</p>
+        <div class="bg-[#A45B3D] text-white text-sm py-2">
+            <marquee behavior="scroll" direction="left" scrollamount="6">
+              🎂 À l'occasion de l'anniversaire du Responsable GIT ! LE 17 OCTOBRE  : -50% sur tout le site avec le code
+            <span class="font-bold bg-white/20 px-2 py-0.5 rounded">DEVART17</span>
+              🎉
+             </marquee>
+        </div>
+
+            <!-- header mobile  -->
+      <header  >
+         <div class = " lg:hidden  " >
+           <img src="image/LOGO.png" width="140" height="51" class=" mx-auto -translate-y-1 py-3 ">
+    
+         </div>
+      </header>
+
+
+
+    <!-- header desktop -->
+        <header class="sticky top-0 z-40 w-full px-8 hidden lg:block  bg-[#FAF7F2] " >
+         <div class=" max-w-7xl mx-auto flex items-center justify-between py-2 " >
+            <img src="image/LOGO.png" alt="FakhArt" width="140" height="51" class="-translate-y-1">
+            <div class="  flex items-center gap-18 text-[#000000] ">
+            <a href="index.html"  >Accueil</a>
+            <!-- had lclass hwa li kaydir select 3la lpage 7ydoh wdiroh 3la lpage ta3kom -->
+            <a href="catalogue.html" class="text-[#A45B3D] inline-block -translate-y-2 underline underline-offset-9 font-bold " >Catalogue</a>
+            <a href="panier.html"> Panier</a>
+            <a href="contact.html" > Contact</a>
+            </div>
+            <div class="relative w-72" >
+            <input type="search"  placeholder=" Rechercher un produit" class="  bg-[#EDE0D4] px-8 py-2 rounded-full focus:outline-none ">
+            <button class="absolute left-3 top-1/2 -translate-y-1/2">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.4 5.85002C10.4 3.33712 8.36293 1.3 5.85002 1.3C3.33712 1.3 1.3 3.33712 1.3 5.85002C1.3 8.36293 3.33712 10.4 5.85002 10.4C8.36293 10.4 10.4 8.36293 10.4 5.85002ZM11.7 5.85002C11.7 7.23129 11.2209 8.50042 10.4204 9.50121L12.8096 11.8905C13.0635 12.1443 13.0635 12.5558 12.8096 12.8096C12.5558 13.0635 12.1443 13.0635 11.8905 12.8096L9.50121 10.4204C8.50042 11.2209 7.23129 11.7 5.85002 11.7C2.61914 11.7 0 9.0809 0 5.85002C0 2.61914 2.61914 0 5.85002 0C9.0809 0 11.7 2.61914 11.7 5.85002Z" fill="#75452E"/>
+                </svg>
+             </button>
+            </div>
+          </div>
+         </header>
+
+
+
+        <section >
+           <!-- Fil d'Ariane -->
+          <nav aria-label="Fil d'Ariane" class="max-w-7xl  px-4 py-4 text-stone-600">
+            <a href="./catalogue.html" class="hover:underline cursor-pointer">Catalogue</a>
+            <span aria-hidden="true" class="mx-2">&gt;</span>
+            <span aria-current="page" class="font-semibold text-stone-900">Tagine Traditionnel</span>
+          </nav>
+
+          <main class="max-w-7xl mx-auto px-4 pb-24 lg:pb-12">
+   
+            <section class="grid grid-cols-2  lg:grid-cols-[1.1fr_1fr_0.95fr] gap-6 lg:gap-8 mb-12">
+
+                <h1 class="lg:hidden col-span-2 text-center text-3xl sm:text-4xl font-['Playfair_Display'] font-bold text-[#18362B]">Tagine Traditionnel</h1>
+                 <!-- Colonne 1 : Images ------------------------------>
+                <div class="flex flex-col gap-4">
+                   <div class="relative overflow-hidden rounded-2xl shadow-md bg-stone-100 h-64 sm:h-80 lg:h-[400px]">
+                       <img
+                        src="assets/images/produits/tagine1.png"
+                        alt="Tajine traditionnel en terre cuite"
+                        class="w-full h-full object-cover    transition-transform duration-500 hover:scale-105 "
+                       >
+                    </div>
+
+                    <div class="flex justify-center gap-4">
+                      <img src="assets/images/produits/tagine1.png"
+                           alt="Vue principale du tajine"
+                           class="w-12 h-12 sm:w-20 sm:h-20 object-cover rounded-lg border-2 border-[#A45B3D]   transition-transform duration-300 hover:scale-110 ">
+
+                      <img src="assets/images/produits/tagine1-under/tagine1-under-1.jpeg"
+                          alt="Vue de dessus du tajine"
+                          class="w-12 h-12 sm:w-20 sm:h-20 object-cover rounded-lg border border-stone-300    transition-transform duration-300 hover:scale-110">
+
+                      <img src="assets/images/produits/tagine1-under/tagine1-under-2.jpeg"
+                           alt="Autre vue du tajine"
+                           class="w-12 h-12 sm:w-20 sm:h-20 object-cover rounded-lg border border-stone-300   transition-transform duration-300 hover:scale-110">
+                    </div>
                 </div>
 
+               <!-- Colonne 2 : Informations Du produit ----------------------------->
+                <div class="col-span-1 flex flex-col gap-4 lg:gap-10">
+                   <div>
+                      <h1 class="   hidden lg:block lg:text-5xl font-['Playfair_Display'] font-bold text-[#18362B] mb-6">
+                       Tagine Traditionnel
+                      </h1>
+
+                      <p class="  text-2xl font-bold text-[#A45B3D] mb-4 border-b border-[#A45B3D] w-fit pb-2">
+                        249 MAD
+                      </p>
+
+                      <p class="text-stone-600 leading-relaxed  text-sm lg:text-base">
+                Façonné à la main par des artisans marocains,
+                ce tajine en terre cuite allie savoir-faire traditionnel
+                et charme authentique. Chaque pièce présente de légères
+                variations qui le rendent unique.
+                       </p>
+              </div>
+
+            
+                 <div class="flex items-center justify-center w-fit border border-stone-400 rounded-lg overflow-hidden bg-white">
+                    <button type="button" aria-label="Diminuer la quantité"
+                        class="px-4 py-2 hover:bg-stone-100">−</button>
+                    <span class="px-4 py-2 font-semibold">1</span>
+                    <button type="button" aria-label="Augmenter la quantité"
+                        class="px-4 py-2 hover:bg-stone-100">+</button>
+                 </div>
+
+                 <div class="flex flex-col gap-6">
+
+
+                 <!-- <button type="button"
+                     class="w-full bg-[#A45B3D] hover:bg-[#8A4A30] text-white font-medium px-6 py-4 rounded-lg flex items-center justify-center gap-3"> -->
+                    
+                     <button type="button"
+                             class="w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-[10px] bg-[#A45B3D] text-white text-base font-medium leading-[1.2] whitespace-nowrap select-none touch-manipulation cursor-pointer transition-all duration-[180ms] [transition-timing-function:cubic-bezier(0.2,_0.7,_0.3,_1)] motion-reduce:transition-none shadow-[0_6px_0_#7A3F27,0_11px_14px_rgba(0,0,0,0.22)] hover:translate-y-[2px] hover:shadow-[0_4px_0_#7A3F27,0_8px_10px_rgba(0,0,0,0.18)] active:translate-y-[6px] active:shadow-[0_1px_0_#7A3F27,0_2px_5px_rgba(0,0,0,0.18)] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#18362B]">
+                         <img src="./assets/images/icons/add-cart.png" alt="" aria-hidden="true" width="24" height="24" class="brightness-0 invert">
+                         <span>Ajouter au panier</span>
+                        </button>
+
+
+                 </div>
+               </div>
+
+              <!-- Colonne 3 : Produits recommandés -->
+               <aside class="col-span-2 lg:col-span-1 bg-[#F8EDE1] p-5 sm:p-6 rounded-3xl">
+                  <h2 class="text-2xl font-['Playfair_Display'] font-bold text-[#18362B] mb-6">
+                    Vous aimerez aussi
+                  </h2>
+
+                  <div class=" grid grid-cols-3 lg:grid-cols-1 gap-4 lg:gap-8">
+                     <article class="flex flex-col lg:flex-row items-center text-center lg:text-left gap-2 lg:gap-4">
+                        <img src="./assets/images/produits/vase1.png"
+                             alt="Vase artisanal"
+                             class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl     transition-transform duration-300 hover:scale-110">
+                        <div>
+                          <h3 class="font-['Playfair_Display'] font-bold text-stone-500 text-sm sm:text-lg">Vase artisanal</h3>
+                          <p class="text-[#A45B3D] font-bold font-mono">80 DH</p>
+                        </div>
+                     </article>
+
+                     <article class="flex flex-col lg:flex-row items-center text-center lg:text-left gap-2 lg:gap-4">
+                         <img src="./assets/images/produits/assiete1.png"
+                              alt="Assiette décorative"
+                              class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl     transition-transform duration-300 hover:scale-110">
+                         <div>
+                             <h3 class="font-['Playfair_Display'] font-bold text-stone-500 text-sm sm:text-lg">Assiette décorative</h3>
+                             <p class="text-[#A45B3D] font-bold font-mono">149 DH</p>
+                         </div>
+                     </article>
+
+                     <article class="flex flex-col lg:flex-row items-center text-center lg:text-left gap-2 lg:gap-4">
+                         <img src="./assets/images/produits/Petit_tagine.png"
+                              alt="Petits tajines artisanaux"
+                              class="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-xl      transition-transform duration-300 hover:scale-110">
+                         <div>
+                           <h3 class="font-['Playfair_Display'] font-bold text-stone-500 text-sm sm:text-lg">Petits tajines</h3>
+                           <p class="text-[#A45B3D] font-bold font-mono">199 DH</p>
+                         </div>
+                     </article>
+                  </div>
+               </aside>
+
             </section>
-        </main>
+          </main>
+        </section>
+        
+         <!--  switch page mobeil  -->
+        <nav class=" fixed bottom-4 left-1/2 -translate-x-1/2 z-50 lg:hidden">
+            <div class="flex items-center gap-6 bg-[#eedecf] px-6 py-2.5 rounded-full shadow-md">
+            <!-- index  -->
+                            
+                <a href="index.html" class="text-[#2b3a32]">
+                   <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 20.0005V12.0005C13 11.7353 12.8946 11.4809 12.7071 11.2934C12.5196 11.1058 12.2652 11.0005 12 11.0005H8C7.73478 11.0005 7.48043 11.1058 7.29289 11.2934C7.10536 11.4809 7 11.7353 7 12.0005V20.0005M1 9.00048C0.99993 8.70955 1.06333 8.4221 1.18579 8.1582C1.30824 7.89429 1.4868 7.66028 1.709 7.47248L8.709 1.47248C9.06999 1.16739 9.52736 1 10 1C10.4726 1 10.93 1.16739 11.291 1.47248L18.291 7.47248C18.5132 7.66028 18.6918 7.89429 18.8142 8.1582C18.9367 8.4221 19.0001 8.70955 19 9.00048V18.0005C19 18.5309 18.7893 19.0396 18.4142 19.4147C18.0391 19.7898 17.5304 20.0005 17 20.0005H3C2.46957 20.0005 1.96086 19.7898 1.58579 19.4147C1.21071 19.0396 1 18.5309 1 18.0005V9.00048Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                   </svg>
+                </a>
+             <!-- catalogue -->
+                <a href="catalogue.html" class="text-[#844d32]">
+                   <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1H2.66667C1.74619 1 1 1.77107 1 2.72222V11.3333C1 12.2845 1.74619 13.0556 2.66667 13.0556H11C11.9205 13.0556 12.6667 12.2845 12.6667 11.3333V2.72222C12.6667 1.77107 11.9205 1 11 1Z" stroke="#75452E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M29.3333 1H21C20.0795 1 19.3333 1.77107 19.3333 2.72222V11.3333C19.3333 12.2845 20.0795 13.0556 21 13.0556H29.3333C30.2538 13.0556 31 12.2845 31 11.3333V2.72222C31 1.77107 30.2538 1 29.3333 1Z" stroke="#75452E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M29.3333 19.9444H21C20.0795 19.9444 19.3333 20.7155 19.3333 21.6667V30.2778C19.3333 31.2289 20.0795 32 21 32H29.3333C30.2538 32 31 31.2289 31 30.2778V21.6667C31 20.7155 30.2538 19.9444 29.3333 19.9444Z" stroke="#75452E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11 19.9444H2.66667C1.74619 19.9444 1 20.7155 1 21.6667V30.2778C1 31.2289 1.74619 32 2.66667 32H11C11.9205 32 12.6667 31.2289 12.6667 30.2778V21.6667C12.6667 20.7155 11.9205 19.9444 11 19.9444Z" stroke="#75452E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                   </svg>
+
+ 
+                </a>
+            <!-- contact -->
+               <a href="contact.html" class="text-[#2b3a32]">
+                  <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M22.0001 4.1875L12.5596 10.2724C12.2392 10.4607 11.8753 10.5599 11.5048 10.5599C11.1344 10.5599 10.7705 10.4607 10.4501 10.2724L1.00012 4.1875M3.10012 1H19.9001C21.0599 1 22.0001 1.95139 22.0001 3.125V15.875C22.0001 17.0486 21.0599 18 19.9001 18H3.10012C1.94032 18 1.00012 17.0486 1.00012 15.875V3.125C1.00012 1.95139 1.94032 1 3.10012 1Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </a>
+            <!-- panier -->
+               <a href="panier.html" class="text-[#2b3a32] ">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1 1.02832L2.099 1.00032C2.33643 0.994332 2.56824 1.07305 2.75293 1.22238C2.93762 1.37171 3.06314 1.5819 3.107 1.81532L5.797 16.1623C5.83993 16.3916 5.96169 16.5987 6.14121 16.7478C6.32072 16.8968 6.54669 16.9783 6.78 16.9783H16.95M16.95 16.9783C15.8454 16.9783 14.95 17.8737 14.95 18.9783C14.95 20.0829 15.8454 20.9783 16.95 20.9783C18.0546 20.9783 18.95 20.0829 18.95 18.9783C18.95 17.8737 18.0546 16.9783 16.95 16.9783ZM3.513 3.97832H19.948C20.0968 3.97802 20.2438 4.01093 20.3783 4.07465C20.5127 4.13837 20.6313 4.2313 20.7253 4.34666C20.8193 4.46202 20.8863 4.5969 20.9216 4.74146C20.9568 4.88603 20.9594 5.03664 20.929 5.18232L19.903 11.4083C19.8037 11.8598 19.5511 12.2629 19.1881 12.5491C18.8251 12.8354 18.3742 12.987 17.912 12.9783H5.2M8.95 18.9783C8.95 20.0829 8.05457 20.9783 6.95 20.9783C5.84543 20.9783 4.95 20.0829 4.95 18.9783C4.95 17.8737 5.84543 16.9783 6.95 16.9783C8.05457 16.9783 8.95 17.8737 8.95 18.9783Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </a>
+            </div>
+        </nav>
+
+
+
+     <!-- footer only desktop browser  -->
+     <footer class="hidden lg:block mt-auto  w-full  " >
+        <div class="  flex items-center gap-6 bg-[#18362B] text-[#FFFFFF]  py-10 px-8 justify-center "  >
+            <div >
+            <p>© 2026 FakhAR't. Tous droits réservés.</p>
+            </div>
+            <div>
+            <p>|</p> 
+            </div>
+            <div>
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M20.5025 3.49206C19.3967 2.38099 18.0796 1.50002 16.6282 0.900497C15.1767 0.300974 13.6198 -0.00511579 12.0482 6.4674e-05C5.46332 6.4674e-05 0.0964826 5.34005 0.0964826 11.892C0.0964826 13.992 0.651256 16.032 1.68844 17.832L0 24L6.33166 22.344C8.0804 23.292 10.0462 23.796 12.0482 23.796C18.6332 23.796 24 18.456 24 11.904C24 8.72404 22.7578 5.73605 20.5025 3.49206ZM12.0482 21.78C10.2633 21.78 8.51457 21.3 6.98291 20.4L6.6211 20.184L2.85829 21.168L3.8593 17.52L3.61809 17.148C2.62619 15.5725 2.09961 13.7512 2.09849 11.892C2.09849 6.44405 6.5608 2.00406 12.0362 2.00406C14.6894 2.00406 17.1859 3.03606 19.0553 4.90805C19.981 5.82469 20.7147 6.9151 21.2136 8.11604C21.7126 9.31698 21.9669 10.6045 21.9618 11.904C21.9859 17.352 17.5236 21.78 12.0482 21.78ZM17.4995 14.388C17.198 14.244 15.7266 13.524 15.4613 13.416C15.1839 13.32 14.991 13.272 14.7859 13.56C14.5809 13.86 14.0141 14.532 13.8452 14.724C13.6764 14.928 13.4955 14.952 13.194 14.796C12.8925 14.652 11.9276 14.328 10.794 13.32C9.90151 12.528 9.31055 11.556 9.12965 11.256C8.9608 10.956 9.10553 10.8 9.26231 10.644C9.39497 10.512 9.56382 10.296 9.70854 10.128C9.85327 9.96004 9.91357 9.82804 10.01 9.63604C10.1065 9.43204 10.0583 9.26404 9.98593 9.12004C9.91357 8.97604 9.31055 7.51205 9.06935 6.91205C8.82814 6.33605 8.57487 6.40805 8.39397 6.39605H7.81507C7.61005 6.39605 7.29648 6.46805 7.01909 6.76805C6.75377 7.06805 5.98191 7.78804 5.98191 9.25204C5.98191 10.716 7.05528 12.132 7.2 12.324C7.34472 12.528 9.31055 15.528 12.3015 16.812C13.0131 17.124 13.5678 17.304 14.002 17.436C14.7136 17.664 15.3648 17.628 15.8834 17.556C16.4623 17.472 17.6563 16.836 17.8975 16.14C18.1508 15.444 18.1508 14.856 18.0663 14.724C17.9819 14.592 17.801 14.532 17.4995 14.388Z" fill="white"/>
+                 </svg>
+            </div>
+            <div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4832 3.51161C18.8046 1.83436 16.6662 0.692357 14.3384 0.230001C12.0106 -0.232356 9.59792 0.00570495 7.40545 0.914079C5.21298 1.82245 3.33919 3.36034 2.02103 5.33328C0.70288 7.30622 -0.000444302 9.62559 2.10574e-07 11.9981C-1.92539e-07 15.1802 1.26408 18.232 3.51432 20.4826C5.76456 22.7332 8.81676 23.9984 11.9999 24C13.575 24.0001 15.135 23.6923 16.592 23.094C18.044 22.4809 19.3649 21.5951 20.4832 20.4846C21.5981 19.3702 22.4826 18.0472 23.086 16.591C23.6894 15.1349 24 13.5742 24 11.9981C24 10.422 23.6894 8.86129 23.086 7.40517C22.4826 5.94904 21.5981 4.62601 20.4832 3.51161ZM19.6373 19.6269C17.9093 21.3618 15.6419 22.4568 13.2083 22.7316V14.8068H15.4802C15.8007 14.8068 16.1081 14.6795 16.3347 14.453C16.5613 14.2264 16.6887 13.9192 16.6887 13.5988C16.6887 13.2784 16.5613 12.9711 16.3347 12.7445C16.1081 12.518 15.8007 12.3907 15.4802 12.3907H13.2083V9.08069C13.2083 8.76029 13.3356 8.45302 13.5623 8.22647C13.7889 7.99992 14.0963 7.87264 14.4168 7.87264H15.8669C16.1874 7.87264 16.4948 7.74537 16.7214 7.51882C16.948 7.29227 17.0754 6.985 17.0754 6.6646C17.0754 6.34421 16.948 6.03694 16.7214 5.81039C16.4948 5.58384 16.1874 5.45656 15.8669 5.45656H13.8125C13.0113 5.45656 12.2429 5.77475 11.6763 6.34113C11.1097 6.90751 10.7914 7.67568 10.7914 8.47667V12.3907H8.53164C8.21114 12.3907 7.90376 12.518 7.67713 12.7445C7.45051 12.9711 7.32319 13.2784 7.32319 13.5988C7.32319 13.9192 7.45051 14.2264 7.67713 14.453C7.90376 14.6795 8.21114 14.8068 8.53164 14.8068H10.7914V22.7316C8.54721 22.4756 6.44015 21.5213 4.76787 20.0034C3.09558 18.4855 1.94259 16.4808 1.47177 14.2724C1.00094 12.0639 1.23607 9.76345 2.14394 7.69586C3.05182 5.62826 4.58655 3.89804 6.53135 2.74961C8.47616 1.60117 10.7327 1.09255 12.9824 1.2956C15.232 1.49865 17.361 2.40311 19.0685 3.88121C20.7761 5.35931 21.976 7.33635 22.4987 9.53307C23.0214 11.7298 22.8406 14.0352 21.9816 16.1236C21.4335 17.4316 20.6375 18.6212 19.6373 19.6269Z" fill="white"/>
+                </svg>
+
+            </div>
+        
+        </div>
+
+     </footer>
     </body>
 </html>
