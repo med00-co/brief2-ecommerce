@@ -20,8 +20,8 @@
             <div class="  flex items-center gap-18 text-[#000000] ">
             <a href="index.html"  >Accueil</a>
             <!-- had lclass hwa li kaydir select 3la lpage 7ydoh wdiroh 3la lpage ta3kom -->
-            <a href="catalogue.html" class="text-[#A45B3D] inline-block -translate-y-2 underline underline-offset-9 font-bold " >Catalogue</a>
-            <a href="contact.html" > Contact</a>
+            <a href="catalogue.html"   >Catalogue</a>
+            <a href="#contact" > Contact</a>
             <a href="panier.html"> Panier</a>
             </div>
             <div class="relative" w72 >
@@ -82,7 +82,212 @@
 
 
 
+     <section id="contact">
+         <main class="flex-1 px-4 py-6 md:px-8 lg:px-12">
 
+        <!-- titre -->
+        <section class="mb-6">
+            <h1 class="text-3xl Playfair Display ">
+                Contact
+            </h1>
+            <p class="mt-2 text-[#5F5650]">
+                Une question, une commande spéciale ?
+                <br>
+                Nous sommes là pour vous répondre.
+            </p>
+        </section>
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+            <!-- the contact -->
+            <section class="rounded-2xl bg-[#F1E3D7] p-6 md:p-10">
+
+               
+              
+<form class="flex flex-col gap-4">
+    <!-- the name -->
+    <div>
+        <label for="nom" class="mb-2 block font-semibold">
+        </label>
+
+        <div class="flex items-center gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/namename.png"
+                alt="name icon"
+                class="size-5 shrink-0 md:size-7"
+            />
+            <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Nom complet"
+                required
+                class="min-w-0 flex-1 bg-transparent outline-none"
+            />
+        </div>
+    </div>
+
+    <!-- the email -->
+    <div>
+        <label for="email" class="mb-2 block font-semibold">
+        </label>
+
+        <div class="flex items-center gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/emailemail.png"
+                alt="email icon"
+                class="size-5 shrink-0 md:size-7"
+            />
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                required
+                class="min-w-0 flex-1 bg-transparent outline-none"
+            />
+        </div>
+    </div>
+
+    <!-- the subject -->
+    <div>
+        <label for="sujet" class="mb-2 block font-semibold">
+        </label>
+
+        <div class="flex items-center gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/sujet.png"
+                alt="subject icon"
+                class="size-5 shrink-0 md:size-7"
+            />
+            <input
+                type="text"
+                id="sujet"
+                name="sujet"
+                placeholder="Sujet"
+                required
+                class="min-w-0 flex-1 bg-transparent outline-none"
+            />
+        </div>
+    </div>
+
+    <!-- the message -->
+    <div>
+        <label for="message" class="mb-2 block font-semibold">
+        </label>
+
+        <div class="flex items-start gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/message.png"
+                alt="message icon"
+                class="mt-1 size-5 shrink-0 md:size-7"
+            />
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Votre message"
+                required
+                class="min-w-0 flex-1 resize-none bg-transparent outline-none"
+            ></textarea>
+        </div>
+    </div>
+
+    <!-- the button -->
+    <button
+        type="button"
+        class="rounded-full bg-[#A8482A] px-6 py-3 font-semibold text-white hover:bg-[#8A3A21]"
+    >
+        Envoyer le message
+    </button>
+</form>
+
+                
+            </section>
+            <!-- right sid -->
+            <div class="flex flex-col gap-6">
+
+                <!-- conta info -->
+                <section class="flex items-center gap-4 rounded-2xl bg-[#F1E3D7] p-5">
+
+                    <div class="flex-1">
+
+                        <h2 class="mb-4 text-lg font-bold text-[#A8482A]">
+                            Nos coordonnées
+                        </h2>
+
+                        <p class="mb-3" break-words>
+                            <div class="flex items-center gap-4">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.35018 9.04982C7.47848 9.10874 7.62302 9.1222 7.75999 9.08799C7.89696 9.05377 8.01819 8.97392 8.10371 8.86159L8.32424 8.57273C8.43997 8.41842 8.59004 8.29318 8.76255 8.20692C8.93507 8.12066 9.1253 8.07576 9.31818 8.07576H11.1818C11.5113 8.07576 11.8273 8.20666 12.0603 8.43966C12.2933 8.67266 12.4242 8.98867 12.4242 9.31818V11.1818C12.4242 11.5113 12.2933 11.8273 12.0603 12.0603C11.8273 12.2933 11.5113 12.4242 11.1818 12.4242C8.21622 12.4242 5.37208 11.2462 3.27508 9.14916C1.17808 7.05217 0 4.20803 0 1.24242C0 0.912913 0.130898 0.596897 0.363898 0.363898C0.596897 0.130898 0.912913 0 1.24242 0H3.10606C3.43557 0 3.75159 0.130898 3.98459 0.363898C4.21759 0.596897 4.34848 0.912913 4.34848 1.24242V3.10606C4.34848 3.29894 4.30358 3.48917 4.21732 3.66169C4.13106 3.83421 4.00582 3.98427 3.85152 4.1L3.56079 4.31805C3.44674 4.40513 3.36636 4.529 3.33329 4.66863C3.30023 4.80825 3.31652 4.95502 3.37939 5.084C4.22839 6.8084 5.62472 8.20298 7.35018 9.04982Z" fill="#A44827"/>
+</svg>
+
+                            <a href="tel:777-234-879" Inter  class="hover:underline">
+                                777-234-870
+                            </a>
+                          </div>
+                           </p>
+
+                        
+<p class="mb-3 break-words">
+  <div class ="flex items-center gap-4" >
+    <svg
+        width="14"
+        height="11"
+        viewBox="0 0 14 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M11.6818 0.5H1.74242C1.05625 0.5 0.5 1.05625 0.5 1.74242V9.19697C0.5 9.88314 1.05625 10.4394 1.74242 10.4394H11.6818C12.368 10.4394 12.9242 9.88314 12.9242 9.19697V1.74242C12.9242 1.05625 12.368 0.5 11.6818 0.5Z" fill="#A44827"/>
+        <path
+            d="M12.9242 2.36364L7.33892 5.92132C7.14939 6.0314 6.9341 6.08939 6.71492 6.08939C6.49573 6.08939 6.28044 6.0314 6.09091 5.92132L0.5 2.36364M1.74242 0.5H11.6818C12.368 0.5 12.9242 1.05625 12.9242 1.74242V9.19697C12.9242 9.88314 12.368 10.4394 11.6818 10.4394H1.74242C1.05625 10.4394 0.5 9.88314 0.5 9.19697V1.74242C0.5 1.05625 1.05625 0.5 1.74242 0.5Z" stroke="#F9EEE3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <a href="mailto:handmade@gmail.com" class="hover:underline">
+        handmade@gmail.com
+    </a>
+    </div>
+    <br>
+</p>         
+                          <div class="flex items-center gap-4" >
+     <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.67881 15.3742C8.12312 14.1271 12.4242 10.0893 12.4242 6.21212C12.4242 4.56456 11.7698 2.98449 10.6048 1.81949C9.43976 0.654489 7.85968 0 6.21212 0C4.56456 0 2.98449 0.654489 1.81949 1.81949C0.65449 2.98449 0 4.56456 0 6.21212C0 10.0893 4.30112 14.1271 5.74544 15.3742C5.87999 15.4754 6.04377 15.5301 6.21212 15.5301C6.38047 15.5301 6.54426 15.4754 6.67881 15.3742Z" fill="#A44827"/>
+<path d="M6.21212 8.54167C7.49869 8.54167 8.54167 7.49869 8.54167 6.21212C8.54167 4.92555 7.49869 3.88258 6.21212 3.88258C4.92555 3.88258 3.88258 4.92555 3.88258 6.21212C3.88258 7.49869 4.92555 8.54167 6.21212 8.54167Z" fill="#A44827"/>
+</svg>
+                        <p class="text-sm text-[A44827]">
+                          Safi,Maroc
+                        </p>
+                      </div>
+                    </div>
+                    <!--iimage for nos coordoees -->
+                    <img
+                        src="image-panier/mizharia.png"
+                        alt="Vase en céramique peint à la main"
+                        class="w-1/3 rounded-lg object-cover">
+                </section>
+                <!-- hours op -->
+                <section class="rounded-2xl bg-[#F1E3D7] p-6">
+<div class="flex items-center gap-2">
+                   
+                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.87041 10.3832C7.1845 10.3117 7.49722 10.5083 7.56881 10.8224C7.6404 11.1365 7.44372 11.4492 7.1296 11.5208C6.70433 11.6178 6.26952 11.6667 5.83334 11.6667C5.51118 11.6667 5.25001 11.4055 5.25001 11.0833C5.25001 10.7612 5.51118 10.5 5.83334 10.5C6.18229 10.5 6.53018 10.4608 6.87041 10.3832ZM5.83562 0L5.98715 0.00227865C7.50009 0.0445296 8.94697 0.632884 10.0602 1.65828L10.1705 1.76225L10.1776 1.76908L10.5 2.09151V0.583333C10.5 0.261167 10.7612 0 11.0833 0C11.4055 0 11.6667 0.261167 11.6667 0.583333V3.5C11.6667 3.82217 11.4055 4.08333 11.0833 4.08333H8.16667C7.84451 4.08333 7.58334 3.82217 7.58334 3.5C7.58334 3.17783 7.84451 2.91667 8.16667 2.91667H9.67485L9.35242 2.59424C8.40648 1.68337 7.14562 1.17188 5.8322 1.16667C5.01343 1.16691 4.20907 1.38245 3.50001 1.79187C0.388977 3.58802 0.388977 8.07836 3.50001 9.87451C3.77899 10.0356 3.87466 10.3925 3.71363 10.6715C3.55256 10.9505 3.19568 11.0461 2.91667 10.8851C-0.972224 8.6399 -0.972224 3.02677 2.91667 0.781576L3.08415 0.688436C3.92911 0.236889 4.87333 4.2246e-05 5.83334 0H5.83562ZM9.46465 8.76424C9.66819 8.51452 10.0355 8.47695 10.2852 8.6805C10.535 8.88405 10.5722 9.25138 10.3687 9.5011C10.0824 9.85236 9.7562 10.1693 9.39657 10.445C9.14091 10.641 8.77483 10.5924 8.57882 10.3368C8.38285 10.0811 8.43113 9.71505 8.68677 9.51904C8.97446 9.29846 9.23561 9.04523 9.46465 8.76424ZM11.0842 5.25C11.4064 5.25047 11.6671 5.51203 11.6667 5.83419C11.666 6.27045 11.6164 6.70525 11.5188 7.13045C11.4468 7.44446 11.1339 7.64058 10.8199 7.56852C10.5059 7.49646 10.3098 7.18355 10.3818 6.86955C10.4599 6.52938 10.4995 6.18149 10.5 5.83248C10.5005 5.51032 10.762 5.24953 11.0842 5.25ZM5.25001 2.91667C5.25001 2.5945 5.51117 2.33333 5.83334 2.33333C6.15551 2.33333 6.41667 2.5945 6.41667 2.91667V5.47274L8.42758 6.47819C8.71573 6.62227 8.83256 6.97275 8.68848 7.2609C8.54441 7.54906 8.19392 7.66589 7.90577 7.52181L5.57243 6.35514C5.37481 6.25633 5.25001 6.05428 5.25001 5.83333V2.91667Z" fill="#A44827"/>
+</svg>
+ <h2 class="mb-4 text-lg font-bold text-[#A8482A]"></h2>
+Horaires
+                    </h2>
+                    </div>
+                    <div class="grid grid-cols-2 gap-y-3 text-sm md:text-base">
+                        <p>Lundi - vendredi</p>
+                        <p>09h00 - 18h00</p>
+                        <p>Samedi</p>
+                        <p>09h00 - 14h00</p>
+                        <p>Dimanche</p>
+                        <p>Fermé</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+     </section>
 
 
 
