@@ -1,22 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | FakhArt</title>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!--doing this link have a lot of disvantage cuz if the network got hacked it can cause problems for the webpage-->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> --> 
      <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="min-h-screen flex flex-col bg-white text-[#2B211C]">
 
-    <!-- MAIN CONTENT -->
+<body class="min-h-screen flex flex-col bg-white text-[#2B211C]">
+    <header class="hidden lg:block">
+        <!-- header desktop -->
+        <header class="sticky top-0 z-50 w-full px-4 hidden lg:block  " >
+         <div class=" max-w-7xl mx-auto flex items-center justify-between py-6 " >
+            <img src="image/LOGO.png" width="140" height="51" class="-translate-y-1">
+            <div class="  flex items-center gap-18 text-[#000000] ">
+            <a href="index.html"  >Accueil</a>
+            <!-- had lclass hwa li kaydir select 3la lpage 7ydoh wdiroh 3la lpage ta3kom -->
+            <a href="catalogue.html"  >Catalogue</a>
+             <a href="panier.html" > Panier</a>
+            <a href="contact.html"class="text-[#A45B3D] inline-block -translate-y-2 underline underline-offset-9 font-bold " > Contact</a>
+           
+            </div>
+            <div class="relative w72" >
+            <input type="search"  placeholder=" Rechercher un produit" class="  bg-[#EDE0D4] px-8 py-2 rounded-full focus:outline-none ">
+            <button class="absolute left-3 top-1/2 -translate-y-1/2">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.4 5.85002C10.4 3.33712 8.36293 1.3 5.85002 1.3C3.33712 1.3 1.3 3.33712 1.3 5.85002C1.3 8.36293 3.33712 10.4 5.85002 10.4C8.36293 10.4 10.4 8.36293 10.4 5.85002ZM11.7 5.85002C11.7 7.23129 11.2209 8.50042 10.4204 9.50121L12.8096 11.8905C13.0635 12.1443 13.0635 12.5558 12.8096 12.8096C12.5558 13.0635 12.1443 13.0635 11.8905 12.8096L9.50121 10.4204C8.50042 11.2209 7.23129 11.7 5.85002 11.7C2.61914 11.7 0 9.0809 0 5.85002C0 2.61914 2.61914 0 5.85002 0C9.0809 0 11.7 2.61914 11.7 5.85002Z" fill="#75452E"/>
+                </svg>
+             </button>
+            </div>
+        </div>
+    </header>
+    </header>
+     <!-- header mobile  -->
+      <header>
+     <div class = " lg:hidden  " >
+    <img src="image/LOGO.png" width="140" height="51" class=" mx-auto -translate-y-1 py-3 ">
+
+      </div>
+        </header>
+    
     <main class="flex-1 px-4 py-6 md:px-8 lg:px-12">
 
-        <!-- TITLE -->
+        <!-- titre -->
         <section class="mb-6">
-            <h1 class="text-3xl font-bold">
+            <h1 class="text-3xl Playfair Display ">
                 Contact
             </h1>
             <p class="mt-2 text-[#5F5650]">
@@ -27,96 +58,111 @@
         </section>
         <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
 
-            <!-- CONTACT FORM -->
+            <!-- the contact -->
             <section class="rounded-2xl bg-[#F1E3D7] p-6 md:p-10">
 
-                <h2 class="mb-6 text-xl font-bold">
-                    Envoyer un message
-                </h2>
+               
+              
+<form class="flex flex-col gap-4">
+    <!-- the name -->
+    <div>
+        <label for="nom" class="mb-2 block font-semibold">
+        </label>
 
-                <form class="flex flex-col gap-4">
+        <div class="flex items-center gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/namename.png"
+                alt="name icon"
+                class="size-5 shrink-0 md:size-7"
+            />
+            <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Nom complet"
+                required
+                class="min-w-0 flex-1 bg-transparent outline-none"
+            />
+        </div>
+    </div>
 
-                    <!-- NAME -->
-                    <div>
-                        <label for="nom" class="mb-2 block font-semibold">
-                             
-          <input id="nom" name="nom" type="text" required>
-          <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.375 15.2227L6.5 0.0226576C6.5 -0.613861 11.118 12.3759 10.6609 11.9258C10.2038 11.4757 9.58396 11.2227 8.9375 11.2227H4.0625C3.41604 11.2227 2.79623 11.4757 2.33911 11.9258C1.88199 12.3759 1.625 12.9861 1.625 13.6227V15.2227C1.625 15.6645 1.26123 16.0227 0.8125 16.0227C0.363769 16.0227 0 15.6645 0 15.2227V13.6227C0 12.5618 0.427922 11.5443 1.18979 10.7941C1.95166 10.044 2.98506 9.62266 4.0625 9.62266H8.9375C10.0149 9.62266 11.0483 10.044 11.8102 10.7941C12.5721 11.5443 13 12.5618 13 13.6227V15.2227C13 15.6645 12.6362 16.0227 12.1875 16.0227C11.7388 16.0227 11.375 15.6645 11.375 15.2227ZM8.9375 4.02266C8.9375 2.69717 7.84619 1.62266 6.5 1.62266C5.15381 1.62266 4.0625 2.69717 4.0625 4.02266C4.0625 5.34814 5.15381 6.42266 6.5 6.42266C7.84619 6.42266 8.9375 5.34814 8.9375 4.02266ZM10.5625 4.02266C10.5625 6.2318 8.74366 8.02266 6.5 8.02266C4.25634 8.02266 2.4375 6.2318 2.4375 4.02266C2.4375 1.81352 4.25634 0.0226576 6.5 0.0226576C8.74366 0.0226576 10.5625 1.81352 10.5625 4.02266Z" fill="#827D76"/>
-</svg>
+    <!-- the email -->
+    <div>
+        <label for="email" class="mb-2 block font-semibold">
+        </label>
 
+        <div class="flex items-center gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/emailemail.png"
+                alt="email icon"
+                class="size-5 shrink-0 md:size-7"
+            />
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                required
+                class="min-w-0 flex-1 bg-transparent outline-none"
+            />
+        </div>
+    </div>
 
-                        </label>
+    <!-- the subject -->
+    <div>
+        <label for="sujet" class="mb-2 block font-semibold">
+        </label>
 
-                        <input
-                            type="text"
-                            id="nom"
-                            name="nom"
-                            required
-                            class="w-full rounded-lg border border-gray-400 bg-white p-3">
-                    </div>
+        <div class="flex items-center gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/sujet.png"
+                alt="subject icon"
+                class="size-5 shrink-0 md:size-7"
+            />
+            <input
+                type="text"
+                id="sujet"
+                name="sujet"
+                placeholder="Sujet"
+                required
+                class="min-w-0 flex-1 bg-transparent outline-none"
+            />
+        </div>
+    </div>
 
+    <!-- the message -->
+    <div>
+        <label for="message" class="mb-2 block font-semibold">
+        </label>
 
-                    <!-- EMAIL -->
-                    <div>
-                        <label for="email" class="mb-2 block font-semibold">
-                            
-                        </label>
+        <div class="flex items-start gap-3 rounded-xl bg-[#FAF7F2] px-4 py-3">
+            <img
+                src="image-panier/message.png"
+                alt="message icon"
+                class="mt-1 size-5 shrink-0 md:size-7"
+            />
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Votre message"
+                required
+                class="min-w-0 flex-1 resize-none bg-transparent outline-none"
+            ></textarea>
+        </div>
+    </div>
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            class="w-full rounded-lg border border-gray-400 bg-white p-3">
-                    </div>
+    <!-- the button -->
+    <button
+        type="button"
+        class="rounded-full bg-[#A8482A] px-6 py-3 font-semibold text-white hover:bg-[#8A3A21]"
+    >
+        Envoyer le message
+    </button>
+</form>
 
-
-            
-                    <div>
-                        <label for="sujet" class="mb-2 block font-semibold">
-                         
-                        </label>
-
-                        <input
-                            type="text"
-                            id="sujet"
-                            name="sujet"
-                            class="w-full rounded-lg border border-gray-400 bg-white p-3">
-                    </div>
-
-                    <div>
-                        <label for="message" class="mb-2 block font-semibold">
-                           
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            required
-                            class="w-full rounded-lg border border-gray-400 bg-white p-3"></textarea>
-                    </div>
-
-
-                  
-                    <button
-                        type="button"
-                        class="rounded-full bg-[#A8482A] px-6 py-3 font-semibold text-white hover:bg-[#8A3A21]">
-
-                        Envoyer le message
-
-                    </button>
-
-                </form>
-
-                <p class="mt-3 text-sm text-[#5F5650]">
-                    Ce formulaire est une maquette. Aucun message n'est envoyé.
-                </p>
-
+                
             </section>
-
-
             <!-- right sid -->
             <div class="flex flex-col gap-6">
 
@@ -129,61 +175,142 @@
                             Nos coordonnées
                         </h2>
 
-                        <p class="mb-3">
-                            📞
-                            <a href="tel:+212777234879" class="hover:underline">
-                                777-234-879
-                            </a>
-                        </p>
+                        <p class="mb-3" break-words>
+                            <div class="flex items-center gap-4">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.35018 9.04982C7.47848 9.10874 7.62302 9.1222 7.75999 9.08799C7.89696 9.05377 8.01819 8.97392 8.10371 8.86159L8.32424 8.57273C8.43997 8.41842 8.59004 8.29318 8.76255 8.20692C8.93507 8.12066 9.1253 8.07576 9.31818 8.07576H11.1818C11.5113 8.07576 11.8273 8.20666 12.0603 8.43966C12.2933 8.67266 12.4242 8.98867 12.4242 9.31818V11.1818C12.4242 11.5113 12.2933 11.8273 12.0603 12.0603C11.8273 12.2933 11.5113 12.4242 11.1818 12.4242C8.21622 12.4242 5.37208 11.2462 3.27508 9.14916C1.17808 7.05217 0 4.20803 0 1.24242C0 0.912913 0.130898 0.596897 0.363898 0.363898C0.596897 0.130898 0.912913 0 1.24242 0H3.10606C3.43557 0 3.75159 0.130898 3.98459 0.363898C4.21759 0.596897 4.34848 0.912913 4.34848 1.24242V3.10606C4.34848 3.29894 4.30358 3.48917 4.21732 3.66169C4.13106 3.83421 4.00582 3.98427 3.85152 4.1L3.56079 4.31805C3.44674 4.40513 3.36636 4.529 3.33329 4.66863C3.30023 4.80825 3.31652 4.95502 3.37939 5.084C4.22839 6.8084 5.62472 8.20298 7.35018 9.04982Z" fill="#A44827"/>
+</svg>
 
-                        <p class="mb-3 break-words">
-                            ✉️
-                            <a href="mailto:handmade@gmail.com" class="hover:underline">
-                                handmade@gmail.com
+                            <a href="tel:777-234-879" Inter  class="hover:underline">
+                                777-234-870
                             </a>
-                        <p>
-                            📍 Safi, Maroc
-                        </p>
+                          </div>
+                           </p>
 
+                        
+<p class="mb-3 break-words">
+  <div class ="flex items-center gap-4" >
+    <svg
+        width="14"
+        height="11"
+        viewBox="0 0 14 11"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M11.6818 0.5H1.74242C1.05625 0.5 0.5 1.05625 0.5 1.74242V9.19697C0.5 9.88314 1.05625 10.4394 1.74242 10.4394H11.6818C12.368 10.4394 12.9242 9.88314 12.9242 9.19697V1.74242C12.9242 1.05625 12.368 0.5 11.6818 0.5Z" fill="#A44827"/>
+        <path
+            d="M12.9242 2.36364L7.33892 5.92132C7.14939 6.0314 6.9341 6.08939 6.71492 6.08939C6.49573 6.08939 6.28044 6.0314 6.09091 5.92132L0.5 2.36364M1.74242 0.5H11.6818C12.368 0.5 12.9242 1.05625 12.9242 1.74242V9.19697C12.9242 9.88314 12.368 10.4394 11.6818 10.4394H1.74242C1.05625 10.4394 0.5 9.88314 0.5 9.19697V1.74242C0.5 1.05625 1.05625 0.5 1.74242 0.5Z" stroke="#F9EEE3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <a href="mailto:handmade@gmail.com" class="hover:underline">
+        handmade@gmail.com
+    </a>
+    </div>
+    <br>
+</p>         
+                          <div class="flex items-center gap-4" >
+     <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.67881 15.3742C8.12312 14.1271 12.4242 10.0893 12.4242 6.21212C12.4242 4.56456 11.7698 2.98449 10.6048 1.81949C9.43976 0.654489 7.85968 0 6.21212 0C4.56456 0 2.98449 0.654489 1.81949 1.81949C0.65449 2.98449 0 4.56456 0 6.21212C0 10.0893 4.30112 14.1271 5.74544 15.3742C5.87999 15.4754 6.04377 15.5301 6.21212 15.5301C6.38047 15.5301 6.54426 15.4754 6.67881 15.3742Z" fill="#A44827"/>
+<path d="M6.21212 8.54167C7.49869 8.54167 8.54167 7.49869 8.54167 6.21212C8.54167 4.92555 7.49869 3.88258 6.21212 3.88258C4.92555 3.88258 3.88258 4.92555 3.88258 6.21212C3.88258 7.49869 4.92555 8.54167 6.21212 8.54167Z" fill="#A44827"/>
+</svg>
+                        <p class="text-sm text-[A44827]">
+                          Safi,Maroc
+                        </p>
+                      </div>
                     </div>
-
-                    <!-- VASE IMAGE -->
+                    <!--iimage for nos coordoees -->
                     <img
-                        src="images/vase.jpg"
+                        src="image-panier/mizharia.png"
                         alt="Vase en céramique peint à la main"
                         class="w-1/3 rounded-lg object-cover">
-
                 </section>
-
-
-                <!-- OPENING HOURS -->
+                <!-- hours op -->
                 <section class="rounded-2xl bg-[#F1E3D7] p-6">
-
-                    <h2 class="mb-4 text-lg font-bold text-[#A8482A]">
-                        🕒 Horaires
+<div class="flex items-center gap-2">
+                   
+                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.87041 10.3832C7.1845 10.3117 7.49722 10.5083 7.56881 10.8224C7.6404 11.1365 7.44372 11.4492 7.1296 11.5208C6.70433 11.6178 6.26952 11.6667 5.83334 11.6667C5.51118 11.6667 5.25001 11.4055 5.25001 11.0833C5.25001 10.7612 5.51118 10.5 5.83334 10.5C6.18229 10.5 6.53018 10.4608 6.87041 10.3832ZM5.83562 0L5.98715 0.00227865C7.50009 0.0445296 8.94697 0.632884 10.0602 1.65828L10.1705 1.76225L10.1776 1.76908L10.5 2.09151V0.583333C10.5 0.261167 10.7612 0 11.0833 0C11.4055 0 11.6667 0.261167 11.6667 0.583333V3.5C11.6667 3.82217 11.4055 4.08333 11.0833 4.08333H8.16667C7.84451 4.08333 7.58334 3.82217 7.58334 3.5C7.58334 3.17783 7.84451 2.91667 8.16667 2.91667H9.67485L9.35242 2.59424C8.40648 1.68337 7.14562 1.17188 5.8322 1.16667C5.01343 1.16691 4.20907 1.38245 3.50001 1.79187C0.388977 3.58802 0.388977 8.07836 3.50001 9.87451C3.77899 10.0356 3.87466 10.3925 3.71363 10.6715C3.55256 10.9505 3.19568 11.0461 2.91667 10.8851C-0.972224 8.6399 -0.972224 3.02677 2.91667 0.781576L3.08415 0.688436C3.92911 0.236889 4.87333 4.2246e-05 5.83334 0H5.83562ZM9.46465 8.76424C9.66819 8.51452 10.0355 8.47695 10.2852 8.6805C10.535 8.88405 10.5722 9.25138 10.3687 9.5011C10.0824 9.85236 9.7562 10.1693 9.39657 10.445C9.14091 10.641 8.77483 10.5924 8.57882 10.3368C8.38285 10.0811 8.43113 9.71505 8.68677 9.51904C8.97446 9.29846 9.23561 9.04523 9.46465 8.76424ZM11.0842 5.25C11.4064 5.25047 11.6671 5.51203 11.6667 5.83419C11.666 6.27045 11.6164 6.70525 11.5188 7.13045C11.4468 7.44446 11.1339 7.64058 10.8199 7.56852C10.5059 7.49646 10.3098 7.18355 10.3818 6.86955C10.4599 6.52938 10.4995 6.18149 10.5 5.83248C10.5005 5.51032 10.762 5.24953 11.0842 5.25ZM5.25001 2.91667C5.25001 2.5945 5.51117 2.33333 5.83334 2.33333C6.15551 2.33333 6.41667 2.5945 6.41667 2.91667V5.47274L8.42758 6.47819C8.71573 6.62227 8.83256 6.97275 8.68848 7.2609C8.54441 7.54906 8.19392 7.66589 7.90577 7.52181L5.57243 6.35514C5.37481 6.25633 5.25001 6.05428 5.25001 5.83333V2.91667Z" fill="#A44827"/>
+</svg>
+ <h2 class="mb-4 text-lg font-bold text-[#A8482A]"></h2>
+Horaires
                     </h2>
-
+                    </div>
                     <div class="grid grid-cols-2 gap-y-3 text-sm md:text-base">
-
                         <p>Lundi - vendredi</p>
                         <p>09h00 - 18h00</p>
-
                         <p>Samedi</p>
                         <p>09h00 - 14h00</p>
-
                         <p>Dimanche</p>
                         <p>Fermé</p>
-
                     </div>
-
                 </section>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+       <!--  switch page mobeil  -->
+  <nav class=" fixed bottom-4 left-1/2 -translate-x-1/2 z-50 lg:hidden">
+    <div class="flex items-center gap-6 bg-[#eedecf] px-6 gap-24 py-2.5 rounded-full shadow-md">
+     <!-- index  -->
+                            
+        <a href="index.html" class="text-[#2b3a32]">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 20.0005V12.0005C13 11.7353 12.8946 11.4809 12.7071 11.2934C12.5196 11.1058 12.2652 11.0005 12 11.0005H8C7.73478 11.0005 7.48043 11.1058 7.29289 11.2934C7.10536 11.4809 7 11.7353 7 12.0005V20.0005M1 9.00048C0.99993 8.70955 1.06333 8.4221 1.18579 8.1582C1.30824 7.89429 1.4868 7.66028 1.709 7.47248L8.709 1.47248C9.06999 1.16739 9.52736 1 10 1C10.4726 1 10.93 1.16739 11.291 1.47248L18.291 7.47248C18.5132 7.66028 18.6918 7.89429 18.8142 8.1582C18.9367 8.4221 19.0001 8.70955 19 9.00048V18.0005C19 18.5309 18.7893 19.0396 18.4142 19.4147C18.0391 19.7898 17.5304 20.0005 17 20.0005H3C2.46957 20.0005 1.96086 19.7898 1.58579 19.4147C1.21071 19.0396 1 18.5309 1 18.0005V9.00048Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+</a>
+    <!-- catalogue -->
+        <a href="catalogue.html" class="text-[#844d32]">
+           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.33333 1H2.05556C1.47259 1 1 1.49746 1 2.11111V7.66667C1 8.28032 1.47259 8.77778 2.05556 8.77778H7.33333C7.9163 8.77778 8.38889 8.28032 8.38889 7.66667V2.11111C8.38889 1.49746 7.9163 1 7.33333 1Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.9444 1H13.6667C13.0837 1 12.6111 1.49746 12.6111 2.11111V7.66667C12.6111 8.28032 13.0837 8.77778 13.6667 8.77778H18.9444C19.5274 8.77778 20 8.28032 20 7.66667V2.11111C20 1.49746 19.5274 1 18.9444 1Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.9444 13.2222H13.6667C13.0837 13.2222 12.6111 13.7197 12.6111 14.3333V19.8889C12.6111 20.5025 13.0837 21 13.6667 21H18.9444C19.5274 21 20 20.5025 20 19.8889V14.3333C20 13.7197 19.5274 13.2222 18.9444 13.2222Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.33333 13.2222H2.05556C1.47259 13.2222 1 13.7197 1 14.3333V19.8889C1 20.5025 1.47259 21 2.05556 21H7.33333C7.9163 21 8.38889 20.5025 8.38889 19.8889V14.3333C8.38889 13.7197 7.9163 13.2222 7.33333 13.2222Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+ 
+</a>
+    <!-- contact -->
+        <a href="contact.html" class="text-[#2b3a32]">
+            <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.0001 4.1875L12.5596 10.2724C12.2392 10.4607 11.8753 10.5599 11.5048 10.5599C11.1344 10.5599 10.7705 10.4607 10.4501 10.2724L1.00012 4.1875M3.10012 1H19.9001C21.0599 1 22.0001 1.95139 22.0001 3.125V15.875C22.0001 17.0486 21.0599 18 19.9001 18H3.10012C1.94032 18 1.00012 17.0486 1.00012 15.875V3.125C1.00012 1.95139 1.94032 1 3.10012 1Z" stroke="#18362B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+</a>
+     <!-- panier -->
+        <a href="panier.html" class="text-[#2b3a32] ">
+            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1.04394L2.65263 1.00049C3.00967 0.991206 3.35826 1.11335 3.63599 1.34506C3.91372 1.57677 4.10246 1.90292 4.16842 2.26511L8.21352 24.5271C8.27808 24.8829 8.46118 25.2043 8.73113 25.4355C9.00107 25.6667 9.34088 25.7933 9.69172 25.7933H24.9849M24.9849 25.7933C23.3239 25.7933 21.9774 27.1827 21.9774 28.8966C21.9774 30.6106 23.3239 32 24.9849 32C26.6459 32 27.9924 30.6106 27.9924 28.8966C27.9924 27.1827 26.6459 25.7933 24.9849 25.7933ZM4.77894 5.6214H29.4932C29.717 5.62094 29.938 5.672 30.1402 5.77088C30.3424 5.86975 30.5207 6.01395 30.662 6.19295C30.8034 6.37195 30.9042 6.58124 30.9572 6.80557C31.0102 7.02989 31.014 7.26359 30.9684 7.48963L29.4255 17.1504C29.2762 17.8509 28.8963 18.4765 28.3505 18.9206C27.8046 19.3647 27.1265 19.6001 26.4315 19.5865H7.31578M12.9549 28.8966C12.9549 30.6106 11.6084 32 9.94736 32C8.28635 32 6.93984 30.6106 6.93984 28.8966C6.93984 27.1827 8.28635 25.7933 9.94736 25.7933C11.6084 25.7933 12.9549 27.1827 12.9549 28.8966Z" stroke="#75452E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</a>
+    </div>
+  </nav>
+   <!-- footer only desktop browser  -->
+     <footer class="hidden lg:block  bottom-4 w-full  " >
+        <div class="  flex items-center gap-6 bg-[#18362B] text-[#FFFFFF]  py-10 px-8 justify-center "  >
+            <div >
+            <p>© 2026 FakhAR't. Tous droits réservés.</p>
+            </div>
+            <div> 
+            <p>|</p> 
+            </div>
+            <div>
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M20.5025 3.49206C19.3967 2.38099 18.0796 1.50002 16.6282 0.900497C15.1767 0.300974 13.6198 -0.00511579 12.0482 6.4674e-05C5.46332 6.4674e-05 0.0964826 5.34005 0.0964826 11.892C0.0964826 13.992 0.651256 16.032 1.68844 17.832L0 24L6.33166 22.344C8.0804 23.292 10.0462 23.796 12.0482 23.796C18.6332 23.796 24 18.456 24 11.904C24 8.72404 22.7578 5.73605 20.5025 3.49206ZM12.0482 21.78C10.2633 21.78 8.51457 21.3 6.98291 20.4L6.6211 20.184L2.85829 21.168L3.8593 17.52L3.61809 17.148C2.62619 15.5725 2.09961 13.7512 2.09849 11.892C2.09849 6.44405 6.5608 2.00406 12.0362 2.00406C14.6894 2.00406 17.1859 3.03606 19.0553 4.90805C19.981 5.82469 20.7147 6.9151 21.2136 8.11604C21.7126 9.31698 21.9669 10.6045 21.9618 11.904C21.9859 17.352 17.5236 21.78 12.0482 21.78ZM17.4995 14.388C17.198 14.244 15.7266 13.524 15.4613 13.416C15.1839 13.32 14.991 13.272 14.7859 13.56C14.5809 13.86 14.0141 14.532 13.8452 14.724C13.6764 14.928 13.4955 14.952 13.194 14.796C12.8925 14.652 11.9276 14.328 10.794 13.32C9.90151 12.528 9.31055 11.556 9.12965 11.256C8.9608 10.956 9.10553 10.8 9.26231 10.644C9.39497 10.512 9.56382 10.296 9.70854 10.128C9.85327 9.96004 9.91357 9.82804 10.01 9.63604C10.1065 9.43204 10.0583 9.26404 9.98593 9.12004C9.91357 8.97604 9.31055 7.51205 9.06935 6.91205C8.82814 6.33605 8.57487 6.40805 8.39397 6.39605H7.81507C7.61005 6.39605 7.29648 6.46805 7.01909 6.76805C6.75377 7.06805 5.98191 7.78804 5.98191 9.25204C5.98191 10.716 7.05528 12.132 7.2 12.324C7.34472 12.528 9.31055 15.528 12.3015 16.812C13.0131 17.124 13.5678 17.304 14.002 17.436C14.7136 17.664 15.3648 17.628 15.8834 17.556C16.4623 17.472 17.6563 16.836 17.8975 16.14C18.1508 15.444 18.1508 14.856 18.0663 14.724C17.9819 14.592 17.801 14.532 17.4995 14.388Z" fill="white"/>
+                 </svg>
+            </div>
+            <div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.4832 3.51161C18.8046 1.83436 16.6662 0.692357 14.3384 0.230001C12.0106 -0.232356 9.59792 0.00570495 7.40545 0.914079C5.21298 1.82245 3.33919 3.36034 2.02103 5.33328C0.70288 7.30622 -0.000444302 9.62559 2.10574e-07 11.9981C-1.92539e-07 15.1802 1.26408 18.232 3.51432 20.4826C5.76456 22.7332 8.81676 23.9984 11.9999 24C13.575 24.0001 15.135 23.6923 16.592 23.094C18.044 22.4809 19.3649 21.5951 20.4832 20.4846C21.5981 19.3702 22.4826 18.0472 23.086 16.591C23.6894 15.1349 24 13.5742 24 11.9981C24 10.422 23.6894 8.86129 23.086 7.40517C22.4826 5.94904 21.5981 4.62601 20.4832 3.51161ZM19.6373 19.6269C17.9093 21.3618 15.6419 22.4568 13.2083 22.7316V14.8068H15.4802C15.8007 14.8068 16.1081 14.6795 16.3347 14.453C16.5613 14.2264 16.6887 13.9192 16.6887 13.5988C16.6887 13.2784 16.5613 12.9711 16.3347 12.7445C16.1081 12.518 15.8007 12.3907 15.4802 12.3907H13.2083V9.08069C13.2083 8.76029 13.3356 8.45302 13.5623 8.22647C13.7889 7.99992 14.0963 7.87264 14.4168 7.87264H15.8669C16.1874 7.87264 16.4948 7.74537 16.7214 7.51882C16.948 7.29227 17.0754 6.985 17.0754 6.6646C17.0754 6.34421 16.948 6.03694 16.7214 5.81039C16.4948 5.58384 16.1874 5.45656 15.8669 5.45656H13.8125C13.0113 5.45656 12.2429 5.77475 11.6763 6.34113C11.1097 6.90751 10.7914 7.67568 10.7914 8.47667V12.3907H8.53164C8.21114 12.3907 7.90376 12.518 7.67713 12.7445C7.45051 12.9711 7.32319 13.2784 7.32319 13.5988C7.32319 13.9192 7.45051 14.2264 7.67713 14.453C7.90376 14.6795 8.21114 14.8068 8.53164 14.8068H10.7914V22.7316C8.54721 22.4756 6.44015 21.5213 4.76787 20.0034C3.09558 18.4855 1.94259 16.4808 1.47177 14.2724C1.00094 12.0639 1.23607 9.76345 2.14394 7.69586C3.05182 5.62826 4.58655 3.89804 6.53135 2.74961C8.47616 1.60117 10.7327 1.09255 12.9824 1.2956C15.232 1.49865 17.361 2.40311 19.0685 3.88121C20.7761 5.35931 21.976 7.33635 22.4987 9.53307C23.0214 11.7298 22.8406 14.0352 21.9816 16.1236C21.4335 17.4316 20.6375 18.6212 19.6373 19.6269Z" fill="white"/>
+                </svg>
 
             </div>
-
+        
         </div>
 
-    </main>
-
+     </footer>
 </body>
+
 </html>
-```
