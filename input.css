@@ -3,4 +3,7 @@
 @theme{
     --font-titel:"Playfair Display", serif;
     --font-inco:"Inconsolata", monospace;
+    --color-princepal: #FAF7F2 ;
+    --color-clay: #75452E ;
+    --color-produitname:#827D76;
 }
