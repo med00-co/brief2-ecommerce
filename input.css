@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Hairline&family=Foldit:wght@100..900&family=Iceberg&family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@theme{
+    --font-titel:"Playfair Display", serif;
+    --font-inco:"Inconsolata", monospace;
+    --color-princepal: #FAF7F2 ;
+    --color-clay: #75452E ;
+    --color-produitname:#827D76;
+}
